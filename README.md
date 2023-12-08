@@ -1,2 +1,2 @@
 # LaTeX
-Documents written with LaTeX, including notes, lab reports, and resumes
+Documents written with LaTeX or Markdown, including notes, lab reports, and resumes
