@@ -1,0 +1,214 @@
+% My resume based on Jake's Resume template
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\setlength{\footskip}{4.08003pt}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+ \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hanz Nathan Po} \\ \vspace{1pt}
+    \small (647)-674-2006 $|$ \href{mailto:hanznathanpo@gmail.com}{\underline{hanznathanpo@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/hanznathanpo/}{\underline{linkedin.com/in/hanznathanpo}} $|$
+    \href{https://github.com/HanzPo}{\underline{github.com/HanzPo}} $|$
+    \href{https://www.hanzpo.com/}{\underline{hanzpo.com}}
+\end{center}
+
+
+%-----------Projects-----------
+\section{Projects}
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Albumify - Automated Album Covers for Spotify Playlists - Hack the North Project} \\ \emph{React.js, JavaScript, CSS, Chakra UI, FastAPI, Python}}{Sept. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed the user interface and frontend logic for Albumify, a web application aimed at automatic album cover generation for Spotify playlists, using React, JavaScript, and Chakra UI.}
+            \resumeItem{Collaborated effectively with a multidisciplinary team of four to bring Albumify from concept to reality, using tools such as Git and GitHub.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Skills Canada Coding Competition - 1st in Ontario} \\ \emph{Java, Maven}}{May. 2023}
+          \resumeItemListStart
+            \resumeItem{Competed against representatives from 19 school boards across Ontario to create CRUD program in one day}
+            \resumeItem{Utilized Java to read and write to a database containing recipe information, display recipes in an accessible format, filter recipes based on dietary restrictions, and calculate ingredients based on provided servings.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+     \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{STEM Fellowship Big Data Challenge} \\ \emph{Python, Matplotlib, Pandas, Scikit-learn}}{Nov. 2021 -- Feb. 2022}
+          \resumeItemListStart
+            \resumeItem{Analyzed the correlation between economic factors such as GDP, Human Development Index scores (HDI) against how much of a country's energy comes from emission-free and renewable sources}
+            \resumeItem{Utilized Pandas to import and parse large datasets, observed patterns using Scikit-learn's regression functions, then visualized interesting findings through Matplotlib \& Geopandas (world maps, scatter plots, line graphs)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Computer Science Club - Co-founder and President}}{May. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Led and organized regular club meetings, fostering a collaborative learning environment with workshops on various computer science-related topics including web development, tools such as Git, and contest preparation.}
+            \resumeItem{Promoted enrichment opportunities such as hackathons and competitions in order to encourage hands-on experiences among members.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Model United Nations Club - President}}{Sep. 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Facilitated training of all club members in preparation for conferences}
+            \resumeItem{Organized school delegations to several conferences for the first time in club history}
+            \resumeItem{Secured club funding, making conferences accessible to more students}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Student Intern - Leadership Department}{Oct. 2022 -- Jun. 2023}
+      {Toronto Catholic District School Board $|$ \emph{Co-op}}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Design promotional material for board-wide events, including posters, videos, and animations with tools such as Canva, Illustrator, and Premiere Pro}
+        \resumeItem{Analyze data regarding student involvement and participation in 31 high schools across Toronto}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Francis Libermann Catholic High School}{Toronto, ON}
+      {Ontario Secondary School Diploma (OSSD) $|$ Expected Graduation Jun. 2024}{Sep. 2020 -- Present}
+      \resumeItemListStart
+        \resumeItem{STEM Program - One of 52 students selected from 250+ applicants}
+        \resumeItem{Honour Roll (2021, 2022, 2023)}
+        \resumeItem{Finalist at school science fair, bronze medal at Toronto Science Fair}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Soft Skills}{: Communication, collaboration, leadership, problem solving, interpersonal, analytical skills} \\
+     \textbf{Languages}{: English (Native), Hokkien, Mandarin, Tagalog, French} \\
+     \textbf{Programming Languages}{: C++, JavaScript, Python, C\# (for Unity engine), Java, HTML, CSS} \\
+     \textbf{Tools}{: Git, Github, Visual Studio Code, Eclipse, Jupyter Notebook, Unity 3D, Vite, Node.js} \\
+     \textbf{Libraries}{: React, Express, Pandas, NumPy, Matplotlib, Scikit-learn, Tkinter}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}

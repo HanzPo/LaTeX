@@ -1,0 +1,38 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+\title{\huge Trigonometric Identities and Equations Notes}
+\author{Hanz Po}
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Equivalent Trigonometric Functions}
+
+There are a number of ratios which evalute to equal values when provided with different angles.
+
+\begin{tikzpicture}[>=stealth]
+  \begin{axis}[
+      xmin=-4,xmax=4,
+      ymin=-2,ymax=2,
+      axis x line=middle,
+      axis y line=middle,
+      axis line style=<->,
+      xlabel={$x$},
+      ylabel={$y$},
+      ]
+      \addplot[no marks,blue,<->] expression[domain=-pi:pi,samples=100]{sin(deg(x))} 
+                  node[pos=0.65,anchor=south west]{$y=\sin(x)}$}; 
+  \end{axis}
+\end{tikzpicture}
+
+\end{document}
